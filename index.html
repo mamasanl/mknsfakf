@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombieterps</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font a tema zombie -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Inserisci il tuo logo qui -->
+    <img src="https://via.placeholder.com/200x100?text=Logo" alt="Logo Zombieterps" class="logo">
+    <h1>Zombieterps</h1>
+    <div class="header-links">
+      <a href="#" id="feedback-link">Feedback</a>
+      <a href="#" id="promo-link">Promo</a>
+    </div>
+    <!-- Messaggi per Feedback e Promo -->
+    <div id="feedback-message" class="message hidden">Work in progress</div>
+    <div id="promo-message" class="message hidden">Work in progress</div>
+  </header>
+
+  <main>
+    <!-- Sezione Rules: regole per fumare bene -->
+    <section class="rules">
+      <h2>Rules...</h2>
+      <p>Assapora ogni boccata con calma</p>
+      <p>Non esagerare: il gusto si apprezza lentamente</p>
+      <p>Condividi il piacere con gli amici, sempre con stile</p>
+    </section>
+
+    <!-- Contenitore Prodotti (riquadro più largo) -->
+    <section class="prodotti" id="prodotti">
+      <!-- Prodotto: Limone -->
+      <div class="prodotto">
+        <div class="prodotto-img">
+          <img src="https://www.my-personaltrainer.it/2019/11/18/limoni-orig.jpeg" alt="Limone">
+        </div>
+        <div class="prodotto-info">
+          <h3>Limone</h3>
+          <p class="descrizione-prodotto">Il limone offre un aroma fresco e vivace, ideale per dare energia.</p>
+          <table>
+            <tr>
+              <th>Quantità</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td>5g</td>
+              <td>€1.00</td>
+            </tr>
+            <tr>
+              <td>25g</td>
+              <td>€4.00</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>€7.50</td>
+            </tr>
+            <tr>
+              <td>100+g</td>
+              <td>€14.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Prodotto: Arancia -->
+      <div class="prodotto">
+        <div class="prodotto-img">
+          <img src="https://www.my-personaltrainer.it/2019/11/18/arancia_900x760.jpeg" alt="Arancia">
+        </div>
+        <div class="prodotto-info">
+          <h3>Arancia</h3>
+          <p class="descrizione-prodotto">L’arancia dona un tocco dolce e agrumato, perfetta per momenti di relax.</p>
+          <table>
+            <tr>
+              <th>Quantità</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td>5g</td>
+              <td>€1.20</td>
+            </tr>
+            <tr>
+              <td>25g</td>
+              <td>€4.50</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>€8.00</td>
+            </tr>
+            <tr>
+              <td>100+g</td>
+              <td>€15.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Prodotto: Albicocca -->
+      <div class="prodotto">
+        <div class="prodotto-img">
+          <img src="https://www.shutterstock.com/image-vector/zombie-flat-vector-illustration-decayed-600w-2555776513.jpg" alt="Albicocca">
+        </div>
+        <div class="prodotto-info">
+          <h3>Albicocca</h3>
+          <p class="descrizione-prodotto">La albicocca è morbida e succosa, per chi cerca un gusto delicato.</p>
+          <table>
+            <tr>
+              <th>Quantità</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td>5g</td>
+              <td>€1.50</td>
+            </tr>
+            <tr>
+              <td>25g</td>
+              <td>€5.00</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>€9.00</td>
+            </tr>
+            <tr>
+              <td>100+g</td>
+              <td>€17.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Prodotto: Mango -->
+      <div class="prodotto">
+        <div class="prodotto-img">
+          <img src="https://www.shutterstock.com/image-vector/zombie-flat-vector-illustration-decayed-600w-2555776513.jpg" alt="Mango">
+        </div>
+        <div class="prodotto-info">
+          <h3>Mango</h3>
+          <p class="descrizione-prodotto">Il mango regala un gusto esotico e dolce, ideale per chi ama sapori intensi.</p>
+          <table>
+            <tr>
+              <th>Quantità</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td>5g</td>
+              <td>€1.30</td>
+            </tr>
+            <tr>
+              <td>25g</td>
+              <td>€4.80</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>€8.20</td>
+            </tr>
+            <tr>
+              <td>100+g</td>
+              <td>€16.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Prodotto: Kiwi -->
+      <div class="prodotto">
+        <div class="prodotto-img">
+          <img src="https://www.shutterstock.com/image-vector/zombie-flat-vector-illustration-decayed-600w-2555776513.jpg" alt="Kiwi">
+        </div>
+        <div class="prodotto-info">
+          <h3>Kiwi</h3>
+          <p class="descrizione-prodotto">Il kiwi è fresco e acidulo, perfetto per dare un tocco di vivacità.</p>
+          <table>
+            <tr>
+              <th>Quantità</th>
+              <th>Prezzo</th>
+            </tr>
+            <tr>
+              <td>5g</td>
+              <td>€1.40</td>
+            </tr>
+            <tr>
+              <td>25g</td>
+              <td>€5.20</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>€8.80</td>
+            </tr>
+            <tr>
+              <td>100+g</td>
+              <td>€17.50</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer id="contatti">
+    <p>&copy; 2025 Zombieterps. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script>
+    // Funzionalità per Feedback
+    document.getElementById('feedback-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var feedback = document.getElementById('feedback-message');
+      feedback.classList.remove('hidden');
+      setTimeout(function() {
+        feedback.classList.add('hidden');
+      }, 3000);
+    });
+    // Funzionalità per Promo
+    document.getElementById('promo-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var promo = document.getElementById('promo-message');
+      promo.classList.remove('hidden');
+      setTimeout(function() {
+        promo.classList.add('hidden');
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

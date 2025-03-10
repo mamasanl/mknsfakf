@@ -1,0 +1,219 @@
+/* Evita scroll orizzontali indesiderati */
+html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Corpo e sfondo con l'immagine fornita */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://img6.arthub.ai/667e0bac-e77d.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+    position: relative;
+  }
+  
+  /* Overlay per oscurare lo sfondo */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .logo {
+    max-width: 200px;
+  }
+  
+  /* Titolo con animazione pulse */
+  h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+    margin: 10px 0;
+    color: #7FFF00;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Header links */
+  .header-links {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .header-links a {
+    text-decoration: none;
+    color: #bada55;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .header-links a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+  }
+  
+  /* Messaggi Feedback/Promo */
+  .message {
+    margin: 10px auto;
+    width: fit-content;
+    background: #a80000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    animation: fadeInOut 3s forwards;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* Sezione Rules */
+  .rules {
+    background: rgba(51, 51, 51, 0.85);
+    border: 2px solid #a80000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  /* Contenitore Prodotti (riquadro più largo) */
+  .prodotti {
+    background: rgba(51, 51, 51, 0.85);
+    border: 2px solid #a80000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  /* Container prodotto: con box visibile */
+  .prodotto {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    border: 1px solid #a80000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .prodotto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #7FFF00;
+  }
+  
+  /* Immagine prodotto: forzare dimensioni uguali */
+  .prodotto-img {
+    flex: 1 1 150px;
+    max-width: 150px;
+    overflow: hidden;
+  }
+  
+  .prodotto-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  .prodotto-img img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Info prodotto */
+  .prodotto-info {
+    flex: 2 1 300px;
+    padding: 20px;
+  }
+  
+  .prodotto-info h3 {
+    font-family: 'Creepster', cursive;
+    margin-top: 0;
+    color: #7FFF00;
+  }
+  
+  /* Descrizione prodotto */
+  .descrizione-prodotto {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  /* Tabella prezzi */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #a80000;
+  }
+  
+  th {
+    background: #222;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  
+  /* Media query per dispositivi mobili */
+  @media (max-width: 600px) {
+    .prodotti {
+      max-width: 90%;
+    }
+    .prodotto {
+      flex-direction: column;
+      align-items: center;
+    }
+    .prodotto-img, .prodotto-info {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  
